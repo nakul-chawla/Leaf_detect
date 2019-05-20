@@ -121,10 +121,10 @@ public class MainActivity extends AppCompatActivity {
                     BitmapFactory.Options options = new BitmapFactory.Options();
 //                        int nh = (int) ( bitmap.getHeight() * (512.0 / bitmap.getWidth()) );
 //                        Bitmap scaled = Bitmap.createScaledBitmap(bitmap, 512, nh, true);
-                    String uri = compressImage(fileUri.toString());
-                    fileUri = Uri.parse(uri);
-                    Bitmap bitmap = BitmapFactory.decodeFile(fileUri.getPath(), options);
-                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, os);
+                    //String uri = compressImage(fileUri.toString());
+                    //fileUri = Uri.parse(uri);
+                    //Bitmap bitmap = BitmapFactory.decodeFile(fileUri.getPath(), options);
+                    //bitmap.compress(Bitmap.CompressFormat.PNG, 100, os);
                     byte[] byteArray = os.toByteArray();
                     System.out.println("byte array : " + byteArray);
                     for (int i = 0; i < byteArray.length; i++) {
